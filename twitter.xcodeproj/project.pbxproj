@@ -13,8 +13,10 @@
 		9AB410EE1E77E49F0004ECDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB410EC1E77E49F0004ECDB /* LaunchScreen.storyboard */; };
 		9AB410F61E77E6870004ECDB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB410F51E77E6870004ECDB /* HomeController.swift */; };
 		9AB410F81E77F0AB0004ECDB /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB410F71E77F0AB0004ECDB /* HomeDatasourceController.swift */; };
-		9AB410FD1E77FCB00004ECDB /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB410FC1E77FCB00004ECDB /* Cells.swift */; };
+		9AB410FD1E77FCB00004ECDB /* UserHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB410FC1E77FCB00004ECDB /* UserHeaderFooter.swift */; };
 		9AB410FF1E77FCE30004ECDB /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB410FE1E77FCE30004ECDB /* HomeDatasource.swift */; };
+		9AB411011E7810670004ECDB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB411001E7810670004ECDB /* User.swift */; };
+		9AB411031E7814810004ECDB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB411021E7814810004ECDB /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		9AB410EF1E77E49F0004ECDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB410F51E77E6870004ECDB /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		9AB410F71E77F0AB0004ECDB /* HomeDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		9AB410FC1E77FCB00004ECDB /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		9AB410FC1E77FCB00004ECDB /* UserHeaderFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderFooter.swift; sourceTree = "<group>"; };
 		9AB410FE1E77FCE30004ECDB /* HomeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
+		9AB411001E7810670004ECDB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9AB411021E7814810004ECDB /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9AB410FE1E77FCE30004ECDB /* HomeDatasource.swift */,
+				9AB411001E7810670004ECDB /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -105,7 +110,8 @@
 		9AB410FB1E77FC790004ECDB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9AB410FC1E77FCB00004ECDB /* Cells.swift */,
+				9AB410FC1E77FCB00004ECDB /* UserHeaderFooter.swift */,
+				9AB411021E7814810004ECDB /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -243,9 +249,11 @@
 			files = (
 				9AB410FF1E77FCE30004ECDB /* HomeDatasource.swift in Sources */,
 				9AB410E41E77E49F0004ECDB /* AppDelegate.swift in Sources */,
-				9AB410FD1E77FCB00004ECDB /* Cells.swift in Sources */,
+				9AB411011E7810670004ECDB /* User.swift in Sources */,
+				9AB410FD1E77FCB00004ECDB /* UserHeaderFooter.swift in Sources */,
 				9AB410F81E77F0AB0004ECDB /* HomeDatasourceController.swift in Sources */,
 				9AB410F61E77E6870004ECDB /* HomeController.swift in Sources */,
+				9AB411031E7814810004ECDB /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

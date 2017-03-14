@@ -9,7 +9,14 @@
 import LBTAComponents
 
 class HomeDatasource: Datasource{
-    let words = ["user1", "user2", "user3"]
+    let users: [User] = {
+        let brainUser = User(name: "Tset", username: "@testsetest", bioText: "sdfigjkfldbmldfbmvodifljvmdpxvjmdo", profileImage: #imageLiteral(resourceName: "profile_image"))
+        let rayUser = User(name: "Ray", username: "@iouoij", bioText: "ouoijoijoijoijporisgjposedifbjsdflbiofjboijdfpbosjdpbfjsidfbijoidfjpv", profileImage: #imageLiteral(resourceName: "profile_image"))
+
+        return [brainUser, rayUser]
+    }()
+    
+    //let words = ["user1", "user2", "user3"]
     
     override func headerClasses() -> [DatasourceCell.Type]? {
         return [UserHeader.self]
@@ -25,12 +32,11 @@ class HomeDatasource: Datasource{
     
     //item
     override func item(_ indexPath: IndexPath) -> Any? {
-        return words[indexPath.item]
+        return users[indexPath.item]
     }
-    
     
     //number
     override func numberOfItems(_ section: Int) -> Int {
-        return words.count
+        return users.count
     }
 }

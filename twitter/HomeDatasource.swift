@@ -10,10 +10,13 @@ import LBTAComponents
 
 class HomeDatasource: Datasource{
     let users: [User] = {
-        let brainUser = User(name: "Tset", username: "@testsetest", bioText: "sdfigjkfldbmldfbmvodifljvmdpxvjmdo", profileImage: #imageLiteral(resourceName: "profile_image"))
-        let rayUser = User(name: "Ray", username: "@iouoij", bioText: "ouoijoijoijoijporisgjposedifbjsdflbiofjboijdfpbosjdpbfjsidfbijoidfjpv", profileImage: #imageLiteral(resourceName: "profile_image"))
+        let brainUser = User(name: "Tset", username: "@testsetest", bioText: "iPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join susdfigjkfldbmldfbmvodifljvmdpxvjmdo", profileImage: #imageLiteral(resourceName: "profile_image"))
+        let rayUser = User(name: "Ray", username: "@iouoij", bioText: "ouoijoijoijoijporisgjposedifbjsdflbiofjboijdfpbosjdpbfjsidfbijoidfjpviPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join su", profileImage: #imageLiteral(resourceName: "profile_image"))
 
-        return [brainUser, rayUser]
+        let kindleUser = User(name: "kindleUser", username: "@kindleUser", bioText: " and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join su", profileImage: #imageLiteral(resourceName: "profile_image"))
+
+        
+        return [brainUser, rayUser, kindleUser]
     }()
     
     //let words = ["user1", "user2", "user3"]

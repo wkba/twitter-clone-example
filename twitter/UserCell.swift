@@ -48,7 +48,8 @@ class UserCell: DatasourceCell {
     
     let bioTextView : UITextView = {
         let textView = UITextView()
-        textView.text = "iPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join su"
+        textView.text = "iPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join su iPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join suiPhone, iPad and ios programign . Join su"
+        textView.backgroundColor = .clear
         textView.font = UIFont.systemFont(ofSize: 15)
         return textView
     }()
@@ -66,7 +67,7 @@ class UserCell: DatasourceCell {
     
     override func setupViews() {
         super.setupViews()
-        
+                
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
         

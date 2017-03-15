@@ -22,6 +22,14 @@ extension HomeDatasourceController{
         navigationController?.navigationBar.backgroundColor = .white
         //完璧な白にするために .isTranslucent = false
         navigationController?.navigationBar.isTranslucent = false
+        
+        //ヘッダーとナビバーの境目をなくす
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+        let navBarSeparatorView = UIView()
+        view.addSubview(navBarSeparatorView)
+        navBarSeparatorView.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0.5)
     }
     
     private func setupLeftNavItem(){
